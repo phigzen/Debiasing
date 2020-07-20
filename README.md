@@ -1,14 +1,17 @@
 # Debiasing
 天池2020KDD-Debiasing
+数据见 https://tianchi.aliyun.com/competition/entrance/231785/information
+
 学习paddlepaddle推荐系统后，参加天池比赛练练手。
 先使用skip-gram制作item-embedding，再融合其他数据，进入GRU模型进行训练和预测。
 
-使用官方的evaluate函数，得到的结果：
+训练使用训练集，测试使用test集每个用户最后一次点击，使用官方的evaluate函数，得到的结果：
 
 TrackA:
 current_time: 1589558400
 date_time: 2020-05-16 00:00:00
 current_phase: 6
+
 |  ndcg_50_full   | ndcg_50_half  | hitrate_50_full | hitrate_50_half |
 |  ----  | ----  | ----  | ----  |
 | 0.14619681 | 0.14513455 | 0.33132893 | 0.31195652 |
